@@ -1,0 +1,423 @@
+<!-- Company on Disk -->
+<ENVELOPE>
+    <HEADER>
+        <VERSION>1</VERSION>
+        <TALLYREQUEST>Export</TALLYREQUEST>
+        <TYPE>Collection</TYPE>
+        <ID>Hostcmpondisk</ID>
+    </HEADER>
+    <BODY>
+        <DESC>
+            <STATICVARIABLES>
+                <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+            </STATICVARIABLES>
+            <TDL>
+                <TDLMESSAGE>
+                    <COLLECTION Name='Hostcmpondisk'>
+                        <TYPE>Company On Disk</TYPE>
+                        <NATIVEMETHOD>Name</NATIVEMETHOD>
+                    </COLLECTION>
+                </TDLMESSAGE>
+            </TDL>
+        </DESC>
+    </BODY>
+</ENVELOPE>
+
+<!-- Tally Prime List of Companies -->
+<ENVELOPE>
+    <HEADER>
+        <VERSION>1</VERSION>
+        <TALLYREQUEST>Export</TALLYREQUEST>
+        <TYPE>Data</TYPE>
+        <ID>List of Companies</ID>
+    </HEADER>
+    <BODY>
+        <DESC>
+            <STATICVARIABLES>
+                <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+            </STATICVARIABLES>
+            <TDL>
+                <TDLMESSAGE>
+                    <REPORT NAME="List of Companies" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <FORMS>List of Companies</FORMS>
+                    </REPORT>
+                    <FORM NAME="List of Companies" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <TOPPARTS>List of Companies</TOPPARTS>
+                        <XMLTAG>"List of Companies"</XMLTAG>
+                    </FORM>
+                    <PART NAME="List of Companies" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <TOPLINES>List of Companies</TOPLINES>
+                        <REPEAT>List of Companies : Collection of Companies</REPEAT>
+                        <SCROLLED>Vertical</SCROLLED>
+                    </PART>
+                    <LINE NAME="List of Companies" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <LEFTFIELDS>Name</LEFTFIELDS>
+                        <LEFTFIELDS>ThisYearBeg</LEFTFIELDS>
+                        <LEFTFIELDS>ThisYearEnd</LEFTFIELDS>
+                        <LEFTFIELDS>EMail</LEFTFIELDS>
+                        <LEFTFIELDS>CountryName</LEFTFIELDS>
+                        <LEFTFIELDS>StateName</LEFTFIELDS>
+                        <LEFTFIELDS>PinCode</LEFTFIELDS>
+                        <LEFTFIELDS>PhoneNumber</LEFTFIELDS>
+                        <LEFTFIELDS>IncomeTaxNumber</LEFTFIELDS>
+                        <LEFTFIELDS>VATTINNumber</LEFTFIELDS>
+                        <LEFTFIELDS>GSTRegistrationNumber</LEFTFIELDS>
+                        <LEFTFIELDS>CINNumber</LEFTFIELDS>
+                        <LEFTFIELDS>PANNumber</LEFTFIELDS>
+                        <LEFTFIELDS>CompanyNumber</LEFTFIELDS>
+                        <LEFTFIELDS>_Address1</LEFTFIELDS>
+                        <LEFTFIELDS>_Address2</LEFTFIELDS>
+                        <LEFTFIELDS>_Address3</LEFTFIELDS>
+                        <LEFTFIELDS>VATApplicable</LEFTFIELDS>
+                        <LEFTFIELDS>IsGSTOn</LEFTFIELDS>
+                    </LINE>
+                    <FIELD NAME="Name" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$Name</SET>
+                        <XMLTAG>"NAME"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="ThisYearBeg" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$ThisYearBeg</SET>
+                        <XMLTAG>"ThisYearBeg"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="ThisYearEnd" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$ThisYearEnd</SET>
+                        <XMLTAG>"ThisYearEnd"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="EMail" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$EMail</SET>
+                        <XMLTAG>"EMail"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="CountryName" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$CountryName</SET>
+                        <XMLTAG>"CountryName"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="StateName" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$StateName</SET>
+                        <XMLTAG>"StateName"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="PinCode" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$PinCode</SET>
+                        <XMLTAG>"PinCode"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="PhoneNumber" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$PhoneNumber</SET>
+                        <XMLTAG>"PhoneNumber"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="IncomeTaxNumber" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$IncomeTaxNumber</SET>
+                        <XMLTAG>"IncomeTaxNumber"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="VATTINNumber" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$VATTINNumber</SET>
+                        <XMLTAG>"VATTINNumber"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="GSTRegistrationNumber" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$GSTRegistrationNumber</SET>
+                        <XMLTAG>"GSTRegistrationNumber"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="CINNumber" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$CINNumber</SET>
+                        <XMLTAG>"CINNumber"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="PANNumber" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$PANNumber</SET>
+                        <XMLTAG>"PANNumber"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="CompanyNumber" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$CompanyNumber</SET>
+                        <XMLTAG>"CompanyNumber"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="_Address1" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$_Address1</SET>
+                        <XMLTAG>"_Address1"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="_Address2" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$_Address2</SET>
+                        <XMLTAG>"_Address2"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="_Address3" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$_Address3</SET>
+                        <XMLTAG>"_Address3"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="VATApplicable" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$VATApplicable</SET>
+                        <XMLTAG>"VATApplicable"</XMLTAG>
+                    </FIELD>
+                    <FIELD NAME="IsGSTOn" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <SET>\$IsGSTOn</SET>
+                        <XMLTAG>"IsGSTOn"</XMLTAG>
+                    </FIELD>
+                    <COLLECTION NAME="Collection of Companies" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">
+                        <TYPE>Company</TYPE>
+                    </COLLECTION>
+                </TDLMESSAGE>
+            </TDL>
+        </DESC>
+    </BODY>
+</ENVELOPE>
+
+<!-- All Masters -->
+<ENVELOPE>
+    <HEADER>
+        <TALLYREQUEST>Export Data</TALLYREQUEST>
+    </HEADER>
+    <BODY>
+        <EXPORTDATA>
+            <REQUESTDESC>
+                <REPORTNAME>List of Accounts</REPORTNAME>
+                <STATICVARIABLES>
+                    <ACCOUNTTYPE>All Masters</ACCOUNTTYPE>
+                    <SVCURRENTCOMPANY>Sale-Purchase Data 900 Plus</SVCURRENTCOMPANY>
+                    <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                </STATICVARIABLES>
+            </REQUESTDESC>
+        </EXPORTDATA>
+    </BODY>
+</ENVELOPE>
+
+<!-- Receivables -->
+<ENVELOPE>
+    <HEADER>
+        <TALLYREQUEST>Export Data</TALLYREQUEST>
+    </HEADER>
+    <BODY>
+        <EXPORTDATA>
+            <REQUESTDESC>
+                <STATICVARIABLES>
+                    <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                    <SVCURRENTCOMPANY>Sale-Purchase Data 900 Plus</SVCURRENTCOMPANY>
+                </STATICVARIABLES>
+                <REPORTNAME>Bills Receivable</REPORTNAME>
+            </REQUESTDESC>
+        </EXPORTDATA>
+    </BODY>
+</ENVELOPE>
+
+<!-- Pyables -->
+<ENVELOPE>
+    <HEADER>
+        <TALLYREQUEST>Export Data</TALLYREQUEST>
+    </HEADER>
+    <BODY>
+        <EXPORTDATA>
+            <REQUESTDESC>
+                <STATICVARIABLES>
+                    <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                    <SVCURRENTCOMPANY>Sale-Purchase Data 900 Plus</SVCURRENTCOMPANY>
+                </STATICVARIABLES>
+                <REPORTNAME>Bills Payable</REPORTNAME>
+            </REQUESTDESC>
+        </EXPORTDATA>
+    </BODY>
+</ENVELOPE>
+
+<!-- Group Outstandings -->
+<ENVELOPE>
+    <HEADER>
+        <TALLYREQUEST>Export Data</TALLYREQUEST>
+    </HEADER>
+    <BODY>
+        <EXPORTDATA>
+            <REQUESTDESC>
+                <STATICVARIABLES>
+                    <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                    <SVCURRENTCOMPANY>Sale-Purchase Data 900 Plus</SVCURRENTCOMPANY>
+                </STATICVARIABLES>
+                <REPORTNAME>Group Outstandings</REPORTNAME>
+            </REQUESTDESC>
+        </EXPORTDATA>
+    </BODY>
+</ENVELOPE>
+
+
+
+<!-- Funds Flow -->
+<ENVELOPE>
+    <HEADER>
+        <TALLYREQUEST>Export Data</TALLYREQUEST>
+    </HEADER>
+    <BODY>
+        <EXPORTDATA>
+            <REQUESTDESC>
+                <STATICVARIABLES>
+                    <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                    <SVCURRENTCOMPANY>Sale-Purchase Data 900 Plus</SVCURRENTCOMPANY>
+                </STATICVARIABLES>
+                <REPORTNAME>Funds Flow</REPORTNAME>
+            </REQUESTDESC>
+        </EXPORTDATA>
+    </BODY>
+</ENVELOPE>
+
+<!-- Cash Flow -->
+<ENVELOPE>
+    <HEADER>
+        <TALLYREQUEST>Export Data</TALLYREQUEST>
+    </HEADER>
+    <BODY>
+        <EXPORTDATA>
+            <REQUESTDESC>
+                <STATICVARIABLES>
+                    <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                    <SVCURRENTCOMPANY>Sale-Purchase Data 900 Plus</SVCURRENTCOMPANY>
+                </STATICVARIABLES>
+                <REPORTNAME>Cash Flow</REPORTNAME>
+            </REQUESTDESC>
+        </EXPORTDATA>
+    </BODY>
+</ENVELOPE>
+
+<!-- Trial Balance -->
+<ENVELOPE>
+    <HEADER>
+        <TALLYREQUEST>Export Data</TALLYREQUEST>
+    </HEADER>
+    <BODY>
+        <EXPORTDATA>
+            <REQUESTDESC>
+                <STATICVARIABLES>
+                    <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                    <SVCURRENTCOMPANY>Sale-Purchase Data 900 Plus</SVCURRENTCOMPANY>
+                    <EXPLODEFLAG>Yes</EXPLODEFLAG>
+                </STATICVARIABLES>
+                <REPORTNAME>Trial Balance</REPORTNAME>
+            </REQUESTDESC>
+        </EXPORTDATA>
+    </BODY>
+</ENVELOPE>
+
+<!-- Profit and Loss -->
+<ENVELOPE>
+    <HEADER>
+        <TALLYREQUEST>Export Data</TALLYREQUEST>
+    </HEADER>
+    <BODY>
+        <EXPORTDATA>
+            <REQUESTDESC>
+                <STATICVARIABLES>
+                    <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                    <SVCURRENTCOMPANY>Sale-Purchase Data 900 Plus</SVCURRENTCOMPANY>
+                    <EXPLODEFLAG>Yes</EXPLODEFLAG>
+                </STATICVARIABLES>
+                <REPORTNAME>Profit and Loss</REPORTNAME>
+            </REQUESTDESC>
+        </EXPORTDATA>
+    </BODY>
+</ENVELOPE>
+
+<!-- Balance Sheet -->
+<ENVELOPE>
+    <HEADER>
+        <TALLYREQUEST>Export Data</TALLYREQUEST>
+    </HEADER>
+    <BODY>
+        <EXPORTDATA>
+            <REQUESTDESC>
+                <STATICVARIABLES>
+                    <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                    <SVCURRENTCOMPANY>Sale-Purchase Data 900 Plus</SVCURRENTCOMPANY>
+                </STATICVARIABLES>
+                <REPORTNAME>Balance Sheet</REPORTNAME>
+            </REQUESTDESC>
+        </EXPORTDATA>
+    </BODY>
+</ENVELOPE>
+
+<!-- Stock Summary -->
+<ENVELOPE>
+    <HEADER>
+        <TALLYREQUEST>Export Data</TALLYREQUEST>
+    </HEADER>
+    <BODY>
+        <EXPORTDATA>
+            <REQUESTDESC>
+                <STATICVARIABLES>
+                    <EXPLODEFLAG>Yes</EXPLODEFLAG>
+                    <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                    <SVCURRENTCOMPANY>Sale-Purchase Data 900 Plus</SVCURRENTCOMPANY>
+                </STATICVARIABLES>
+                <REPORTNAME>Stock Summary</REPORTNAME>
+            </REQUESTDESC>
+        </EXPORTDATA>
+    </BODY>
+</ENVELOPE>
+
+<!-- Movement Analysis -->
+<ENVELOPE>
+    <HEADER>
+        <TALLYREQUEST>Export Data</TALLYREQUEST>
+    </HEADER>
+    <BODY>
+        <EXPORTDATA>
+            <REQUESTDESC>
+                <REPORTNAME>Movement Analysis</REPORTNAME>
+                <STATICVARIABLES>
+                    <EXPLODEFLAG>Yes</EXPLODEFLAG>
+                    <SVCURRENTCOMPANY>Sale-Purchase Data 900 Plus</SVCURRENTCOMPANY>
+                    <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                </STATICVARIABLES>
+            </REQUESTDESC>
+        </EXPORTDATA>
+    </BODY>
+</ENVELOPE>
+
+<!-- Reorder Status -->
+<ENVELOPE>
+    <HEADER>
+        <TALLYREQUEST>Export Data</TALLYREQUEST>
+    </HEADER>
+    <BODY>
+        <EXPORTDATA>
+            <REQUESTDESC>
+                <REPORTNAME>Reorder Status</REPORTNAME>
+                <STATICVARIABLES>
+                    <EXPLODEFLAG>Yes</EXPLODEFLAG>
+                    <SVCURRENTCOMPANY>Sale-Purchase Data 900 Plus</SVCURRENTCOMPANY>
+                    <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                </STATICVARIABLES>
+            </REQUESTDESC>
+        </EXPORTDATA>
+    </BODY>
+</ENVELOPE>
+
+
+<!-- Voucher Register -->
+<ENVELOPE>
+    <HEADER>
+        <TALLYREQUEST>Export Data</TALLYREQUEST>
+    </HEADER>
+    <BODY>
+        <EXPORTDATA>
+            <REQUESTDESC>
+                <REPORTNAME>Voucher Register</REPORTNAME>
+                <STATICVARIABLES>
+                    <SVFROMDATE TYPE="Date">1-Nov-2020</SVFROMDATE>
+                    <SVTODATE TYPE="Date">30-Nov-2020</SVTODATE>
+                    <VOUCHERTYPENAME>Receipt</VOUCHERTYPENAME>
+                    <SVCURRENTCOMPANY>Test Data 14000 Plus</SVCURRENTCOMPANY>
+                    <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                </STATICVARIABLES>
+            </REQUESTDESC>
+        </EXPORTDATA>
+    </BODY>
+</ENVELOPE>
+
+<!-- Master Stats -->
+<ENVELOPE>
+    <HEADER>
+        <TALLYREQUEST>Export Data</TALLYREQUEST>
+    </HEADER>
+    <BODY>
+        <EXPORTDATA>
+            <REQUESTDESC>
+                <REPORTNAME>Statistics</REPORTNAME>
+                <STATICVARIABLES>
+                    <SVFROMDATE TYPE="Date">1-Apr-2021</SVFROMDATE>
+                    <SVTODATE TYPE="Date">30-Mar-2022</SVTODATE>
+                    <SVCURRENTCOMPANY>Demo Company</SVCURRENTCOMPANY>
+                    <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                </STATICVARIABLES>
+            </REQUESTDESC>
+        </EXPORTDATA>
+    </BODY>
+</ENVELOPE>
